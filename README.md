@@ -18,6 +18,12 @@ DNS_NAMES=sub1.tudominio.com,sub2.tudominio.com,sub3.tudominio.com
 
 ## ¿Dónde buscar las variables para .env?
 
+### DNS_NAMES
+
+Son los subdomios que quieres que sean actualizados por el script
+
+### ZONE_ID Y API_TOKEN
+
 Ve a tu dominio y en la sidebar busca la opción que dice '*overview*' y la seleccionas.
 ![Sidebar de tu dominio](images/sidebar.png)
 
@@ -31,7 +37,7 @@ Una vez en la seccion API, puedes copiar tu '**ZONE_ID**', también aquí encont
 
 Creas tu token.
 
-![Edit Zone DNS](images/edit_zone_DNS.png)
+![Edit Zone DNS](images/Edit_zone_DNS.png)
 
 Seleccionas '*Edit Zone DNS*'.
 
