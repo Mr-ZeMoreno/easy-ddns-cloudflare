@@ -1,0 +1,3 @@
+# mycron
+*/5 * * * * /app/update.sh >> /var/log/update.log 2>&1
+

@@ -1,0 +1,10 @@
+services:
+  ddns:
+    image: ddns
+    build: .
+    container_name: ddns
+    environment:
+      - ZONE_ID=${ZONE_ID}
+      - API_TOKEN=${API_TOKEN}
+      - DNS_NAMES=${DNS_NAMES}
+
