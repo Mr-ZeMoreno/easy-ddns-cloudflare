@@ -24,6 +24,7 @@ IFS=',' read -ra DNS_ARRAY <<< "$DNS_NAMES"
 
 # Iterar sobre cada nombre DNS
 for DNS_NAME in "${DNS_ARRAY[@]}"; do
+  DNS_NAME=$(echo "$DNS_NAME" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
   echo "Procesando: $DNS_NAME"
 
   # Consultar el registro DNS en Cloudflare
